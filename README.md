@@ -6,6 +6,6 @@ You need to have the following dependencies to make the project work:
 To run/build the project locally use:
 - npm run build 
 - npm run start 
-- the site will be available at localhost:8080
+- the site will be available at localhost:8080/
 
 We can deploy the website using github pages and share it with the class during the presentation 
