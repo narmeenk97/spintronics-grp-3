@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="/src/_data/assets/style.css">
-    <link rel="stylesheet" href="/src/_data/assets/styles.css">
+    <link rel="stylesheet" type="text/css"  href="/_data/assets/style.css">
 </head>
 
 <body>
@@ -15,9 +14,9 @@
             <p class="fs-4 fw-bold mb-0">Group 3</p>
           </div>
           <div class="spintronic-center d-flex justify-content-center flex-grow-1">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none text-body-secondary">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <p class="fs-4 fw-bold mb-0">SPINTRONICS</p>
+              <p class="fs-4 fw-bold mb-0 white_text_theme">SPINTRONICS</p>
             </a>
           </div>
           <ul class="nav nav-pills">
@@ -26,6 +25,9 @@
             <li class="nav-item"><a href="/symposiumposter/" class="nav-link">Symposium Poster</a></li>
             <li class="nav-item"><a href="/bibliography/" class="nav-link">Bibliography</a></li>
             <li class="nav-item"><a href="/spintronics/" class="nav-link">Spintronics</a></li>
+            <li class="nav-item">
+              <button class="btn btn-dark shadow" id="btnSwitch">Toggle Mode</button>
+            </li>
           </ul>
         </header>
       </div>
@@ -52,6 +54,7 @@
       </div>
 
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/_data/scripts/themeSwitcher.js"></script>
 </body>
 
 </html>
