@@ -1,4 +1,4 @@
-// code from: https://tinyprojects.dev global.js
+// modified code from: https://tinyprojects.dev global.js
 if (typeof window !== "undefined") {
     var theme = window.localStorage.getItem('theme');
     if(!theme){
@@ -18,7 +18,7 @@ if (typeof window !== "undefined") {
 
     document.documentElement.setAttribute('data-bs-theme',theme)
 
-    // code from boostrap 5 enable dark: https://www.codeply.com/p/BmyKLq8RTV
+    // modified code from boostrap 5 enable dark: https://www.codeply.com/p/BmyKLq8RTV
     var btn = document.getElementById('btnSwitch')
     btn.addEventListener('click',()=>{
         if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
