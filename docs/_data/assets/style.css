@@ -1,9 +1,0 @@
-[data-bs-theme="dark"] {
-    --bs-primary: #001199;
-    --bs-primary-bg-subtle: #001199;
-    --bs-primary-bg-subtle-dark: #001199;
-    
-    .btn-primary {
-      --bs-btn-bg: #001199;
-    }
-}
