@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spintronics</title>
-    <link rel="stylesheet" href="/src/_data/assets/style.css">
-    <link rel="stylesheet" href="/src/_data/assets/styles.css">
+    <link rel="stylesheet" type="text/css"  href="/_data/assets/style.css">
 </head>
 
 <body>
@@ -15,9 +14,9 @@
             <p class="fs-4 fw-bold mb-0">Group 3</p>
           </div>
           <div class="spintronic-center d-flex justify-content-center flex-grow-1">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none text-body-secondary">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <p class="fs-4 fw-bold mb-0">SPINTRONICS</p>
+              <p class="fs-4 fw-bold mb-0 white_text_theme">SPINTRONICS</p>
             </a>
           </div>
           <ul class="nav nav-pills">
@@ -27,26 +26,31 @@
             <li class="nav-item"><a href="/quiz/" class="nav-link">Spintronics Quiz</a></li>
             <li class="nav-item"><a href="/bibliography/" class="nav-link">Bibliography</a></li>
             <li class="nav-item"><a href="/spintronics/" class="nav-link">Spintronics</a></li>
+            <li class="nav-item">
+              <button class="btn btn-dark shadow" id="btnSwitch">Toggle Mode</button>
+            </li>
           </ul>
         </header>
       </div>
     <main>
         
 <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="/src/_data/assets/style.css">
 <div class="container my-4">
-  <span class="fw-bold">Our Problem Statement:</span>
-  <p>The main challenge of Spintronics is the high power consumption required to change the spin state of an electron, as it takes significant
+  <h1 class="fw-bold">Our Problem Statement:</h1>
+  <h5>The main challenge of Spintronics is the high power consumption required to change the spin state of an electron, as it takes significant
     energy to apply the necessary torque. This makes Spintronics a less viable alternative to CMOS-based data manipulation.
-  </p>
+  </h5>
 </div>
 <div class="container my-4">
   <div class="row">
     <div class="col-md-4 d-flex flex-column align-items-center">
       <img src="../_data/pictures/spin.gif" alt="First GIF" class="img-fluid mb-3">
       <img src="../_data/pictures/b6fb9f87a15aea2c968b3c28cd6efb2f.gif" alt="Second GIF" class="img-fluid mb-3">
+      <img src="../_data/pictures/Electron_Classical_Model.gif" alt="Third GIF" class="img-fluid mb-3">
     </div>
     <div class="col-md-8">
+      <h5 class="mb-4">FAQ's about our Problem Statement</h5>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -124,6 +128,67 @@
           </div>
         </div>
       </div>
+      <div class="container my-4">
+          <div class="col-md-8">
+            <h5 class="mb-4">There are many risk factors associated with Spintronics such as:</h5>
+            <div class="accordion" id="accordionExample2">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    Energy Inefficiency
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    Current devices consume significant energy to alter spin states.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Materail Stability
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    Lack of durable and scalable materials for spintronic applications.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                     Resource Dependency
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    Dependence on materials can cause concern about supply chain vulnerabilities and cost. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    Environmental Impact
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample2">
+                  <div class="accordion-body">
+                    Extraction and use of non-renewable materials could result in ecological harm.
+                  </div>
+                </div>
+              </div>
+              <div class="container my-4">
+                <h4 class="fw-bold mb-4">Our Solution:</h4>
+                <p>
+                  We propose focusing on using antiferromagnetic materials in conjunction with Voltage-Controlled Magnetization (VCMA) for spin manipulation.
+                        VCMA uses electric fields to efficiently manipulate spin states in antiferromagnetic materials, offering a low-energy alternative to
+                        traditional magnetic field-based methods. 
+                </p>
+              </div>
+      </div>
     </div>
   </div>
 </div>
@@ -145,6 +210,7 @@
       </div>
 
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/_data/scripts/themeSwitcher.js"></script>
 </body>
 
 </html>
