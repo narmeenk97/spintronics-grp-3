@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spintronics Quiz</title>
+    <link rel="stylesheet" type="text/css"  href="/_data/assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <div class="group-number">
+            <p class="fs-4 fw-bold mb-0">Group 3</p>
+          </div>
+          <div class="spintronic-center d-flex justify-content-center flex-grow-1">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none text-body-secondary">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              <p class="fs-4 fw-bold mb-0 white_text_theme">SPINTRONICS</p>
+            </a>
+          </div>
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/spintronics-grp-3/" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/contact/" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/symposiumposter/" class="nav-link">Symposium Poster</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/quiz/" class="nav-link">Spintronics Quiz</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/bibliography/" class="nav-link">Bibliography</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/spintronics/" class="nav-link">Spintronics</a></li>
+            <li class="nav-item">
+              <button class="btn btn-dark shadow" id="btnSwitch">Toggle Mode</button>
+            </li>
+          </ul>
+        </header>
+      </div>
+    <main>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spintronics Quiz</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        /* Styling for Quiz Form */
+        #quiz-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for each question */
+        .question p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .form-check {
+            margin-bottom: 15px;
+        }
+
+        .form-check label {
+            font-size: 1rem;
+        }
+
+        /* Styling for submit button */
+        .btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Styling for the result message */
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #d4edda;
+            color: #155724;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #result.fail {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 576px) {
+            .container {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .btn-primary {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center">Spintronics Quiz</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question mb-4">
+                <p class="fw-bold">What is the traditional method in which spin-polarized electrons are manipulated in spintronics?</p>
+                <div class="form-check">
+                    <input type="radio" id="q1a1" name="q1" class="form-check-input" value="Magnetic fields">
+                    <label for="q1a1" class="form-check-label">Magnetic fields</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1a2" name="q1" class="form-check-input" value="Electric fields">
+                    <label for="q1a2" class="form-check-label">Electric fields</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1a3" name="q1" class="form-check-input" value="Spin-orbit interaction">
+                    <label for="q1a3" class="form-check-label">Spin-orbit interaction</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q1a4" name="q1" class="form-check-input" value="Thermal gradients">
+                    <label for="q1a4" class="form-check-label">Thermal gradients</label>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question mb-4">
+                <p class="fw-bold">What distinguishes spin currents from traditional charge currents in spintronics?</p>
+                <div class="form-check">
+                    <input type="radio" id="q2a1" name="q2" class="form-check-input" value="Spin currents do not involve electron movement">
+                    <label for="q2a1" class="form-check-label">Spin currents do not involve electron movement</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q2a2" name="q2" class="form-check-input" value="Spin currents transfer momentum">
+                    <label for="q2a2" class="form-check-label">Spin currents transfer momentum</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q2a3" name="q2" class="form-check-input" value="Spin currents are faster than charge currents">
+                    <label for="q2a3" class="form-check-label">Spin currents are faster than charge currents</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q2a4" name="q2" class="form-check-input" value="Spin currents are unaffected by resistance">
+                    <label for="q2a4" class="form-check-label">Spin currents are unaffected by resistance</label>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question mb-4">
+                <p class="fw-bold">What does the term "spin" in spintronics refer to?</p>
+                <div class="form-check">
+                    <input type="radio" id="q3a1" name="q3" class="form-check-input" value="Electron motion">
+                    <label for="q3a1" class="form-check-label">Electron motion</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3a2" name="q3" class="form-check-input" value="Electron spin">
+                    <label for="q3a2" class="form-check-label">Electron spin</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3a3" name="q3" class="form-check-input" value="Magnetic field">
+                    <label for="q3a3" class="form-check-label">Magnetic field</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q3a4" name="q3" class="form-check-input" value="Proton spin">
+                    <label for="q3a4" class="form-check-label">Proton spin</label>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question mb-4">
+                <p class="fw-bold">What is one major application of spintronics in data storage?</p>
+                <div class="form-check">
+                    <input type="radio" id="q4a1" name="q4" class="form-check-input" value="Flash memory">
+                    <label for="q4a1" class="form-check-label">Flash memory</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4a2" name="q4" class="form-check-input" value="Magnetic Random-Access Memory (MRAM)">
+                    <label for="q4a2" class="form-check-label">Magnetic Random-Access Memory (MRAM)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4a3" name="q4" class="form-check-input" value="Solid-state drives">
+                    <label for="q4a3" class="form-check-label">Solid-state drives</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q4a4" name="q4" class="form-check-input" value="Optical disks">
+                    <label for="q4a4" class="form-check-label">Optical disks</label>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question mb-4">
+                <p class="fw-bold">What innovative method is being explored to address power consumption challenges in spintronic devices?</p>
+                <div class="form-check">
+                    <input type="radio" id="q5a1" name="q5" class="form-check-input" value="Quantum tunneling through spin barriers">
+                    <label for="q5a1" class="form-check-label">Quantum tunneling through spin barriers</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5a2" name="q5" class="form-check-input" value="Electric field-driven spin manipulation in antiferromagnetic materials">
+                    <label for="q5a2" class="form-check-label">Electric field-driven spin manipulation in antiferromagnetic materials</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5a3" name="q5" class="form-check-input" value="Magnetic resonance amplification for spin alignment">
+                    <label for="q5a3" class="form-check-label">Magnetic resonance amplification for spin alignment</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q5a4" name="q5" class="form-check-input" value="Energy recovery circuits for spin current stabilization">
+                    <label for="q5a4" class="form-check-label">Energy recovery circuits for spin current stabilization</label>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <!-- Result Display -->
+        <div id="result" class="mt-4 text-center"></div>
+    </div>
+
+    <script>
+        // Function to evaluate quiz answers
+        function submitQuiz() {
+            let score = 0;
+
+            // Answer keys (correct answers for each question)
+            const correctAnswers = {
+                q1: "Magnetic fields",
+                q2: "Spin currents transfer momentum",
+                q3: "Electron spin",
+                q4: "Magnetic Random-Access Memory (MRAM)",
+                q5: "Electric field-driven spin manipulation in antiferromagnetic materials"
+            };
+
+            // Loop through each question (q1 to q5)
+            for (let i = 1; i <= 5; i++) {
+                // Find the selected radio button for each question
+                let selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                
+                // Check if the selected answer is correct
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[`q${i}`]) {
+                    score++;
+                }
+            }
+
+            // Display the result
+            document.getElementById('result').innerHTML = `You scored ${score} out of 5!`;
+        }
+    </script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    </main>
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="/spintronics-grp-3/" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/contact/" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/symposiumposter/" class="nav-link px-2 text-body-secondary">Symposium Poster</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/quiz/" class="nav-link">Spintronics Quiz</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/bibliography/" class="nav-link px-2 text-body-secondary">Bibliography</a></li>
+            <li class="nav-item"><a href="/spintronics-grp-3/spintronics/" class="nav-link px-2 text-body-secondary">Spintronics</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2024 Spintronics, Narmeen Khalid</p>
+        </footer>
+      </div>
+
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/_data/scripts/themeSwitcher.js"></script>
+</body>
+
+</html>
