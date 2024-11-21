@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="/src/_data/assets/style.css">
-    <link rel="stylesheet" href="/src/_data/assets/styles.css">
+    <link rel="stylesheet" type="text/css"  href="/_data/assets/style.css">
 </head>
 
 <body>
@@ -15,9 +14,9 @@
             <p class="fs-4 fw-bold mb-0">Group 3</p>
           </div>
           <div class="spintronic-center d-flex justify-content-center flex-grow-1">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-dark text-decoration-none text-body-secondary">
               <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-              <p class="fs-4 fw-bold mb-0">SPINTRONICS</p>
+              <p class="fs-4 fw-bold mb-0 white_text_theme">SPINTRONICS</p>
             </a>
           </div>
           <ul class="nav nav-pills">
@@ -27,12 +26,15 @@
             <li class="nav-item"><a href="/quiz/" class="nav-link">Spintronics Quiz</a></li>
             <li class="nav-item"><a href="/bibliography/" class="nav-link">Bibliography</a></li>
             <li class="nav-item"><a href="/spintronics/" class="nav-link">Spintronics</a></li>
+            <li class="nav-item">
+              <button class="btn btn-dark shadow" id="btnSwitch">Toggle Mode</button>
+            </li>
           </ul>
         </header>
       </div>
     <main>
         <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="/src/_data/assets/style.css">
 <div class="container">
 
   <div class="jumbotron p-3 p-md-5 text-white rounded my-4" style="background-image: url('../_data/pictures/bg2.jpg');">
@@ -44,7 +46,8 @@
           spintronics can be used to optimize energy..</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
           <a href="/spintronics/" class="btn btn-light btn-lg px-4 gap-3">Spintronics</a>
-          <a href="/symposiumposter/" class="btn btn-light btn-lg px-4">Symposium Poster</a>
+          <a href="/symposiumposter/" class="btn btn-light btn-lg px-4 gap-3">Symposium Poster</a>
+          <a href="/quiz/" class="btn btn-light btn-lg px-4 gap-3">Quiz!</a>
         </div>
       </div>
 
@@ -91,14 +94,16 @@
             <li class="nav-item"><a href="/" class="nav-link px-2 text-body-secondary">Home</a></li>
             <li class="nav-item"><a href="/contact/" class="nav-link px-2 text-body-secondary">Contact Us</a></li>
             <li class="nav-item"><a href="/symposiumposter/" class="nav-link px-2 text-body-secondary">Symposium Poster</a></li>
+            <li class="nav-item"><a href="/quiz/" class="nav-link px-2 text-body-secondary">Spintronics Quiz</a></li>
             <li class="nav-item"><a href="/bibliography/" class="nav-link px-2 text-body-secondary">Bibliography</a></li>
             <li class="nav-item"><a href="/spintronics/" class="nav-link px-2 text-body-secondary">Spintronics</a></li>
           </ul>
-          <p class="text-center text-body-secondary">© 2024 Spintronics, Narmeen Khalid</p>
+          <p class="text-center text-body-secondary">© 2024 Spintronics, Group 3</p>
         </footer>
       </div>
 
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/_data/scripts/themeSwitcher.js"></script>
 </body>
 
 </html>
