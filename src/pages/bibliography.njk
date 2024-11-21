@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Bibliography
 permalink: /bibliography/
 ---
-<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 <div class="container">
 <ul class="nav">
@@ -18,13 +18,13 @@ permalink: /bibliography/
 
 <div id="bibliography" class="container my-4">
     <h2>Bibliography</h2>
-    <iframe src="../_data/assets/Bibliography.pdf" width="100%" height="900px"></iframe>
+    <iframe src="{{ site.baseurl }}/_data/assets/Bibliography.pdf" width="100%" height="900px"></iframe>
 </div>
 
 <div id="library-list" class="container my-4">
     <h2>Library List of Resources</h2>
-    <iframe src="../_data/assets/Library List of Resources.pdf" width="100%" height="900px"></iframe>
+    <iframe src="{{ site.baseurl }}/_data/assets/Library List of Resources.pdf" width="100%" height="900px"></iframe>
 </div>
 
 
-<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ site.baseurl }}/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
