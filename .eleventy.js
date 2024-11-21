@@ -5,8 +5,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/_data/scripts/themeSwitcher.js'); 
   eleventyConfig.addPassthroughCopy('src/_data/assets/Poster.pdf');
   return {
+      pathPrefix: "/Spintronics/",
       dir: {
-        input: "src"
+        input: "src",
+        output: "docs"
       }
     };
   };
